@@ -17,6 +17,13 @@ uvicorn main:app --reload
 The server will be available at `http://localhost:8000`.
 
 ---
+Dataset is not included due to size.
+
+Download it from:
+https://archive.ics.uci.edu/dataset/113/twenty+newsgroups
+
+Place it in:
+data/20newsgroups_cleaned.jsonl
 
 ## 1. Project Structure
 
@@ -419,4 +426,5 @@ docker run -p 8000:8000 semantic-search-20ng
   - Preserve **semantic correctness** (using cosine similarity threshold).
   - Improve **latency** by restricting lookups to a relevant cluster.
 - All heavy artifacts (dataset, embeddings, clustering) are **cached on disk**, so the system behaves realistically: first run is expensive, subsequent runs are fast.
+
 
