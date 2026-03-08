@@ -1,0 +1,21 @@
+semantic-search-system
+│
+├── data/                  # Raw / processed dataset artifacts (20 Newsgroups)
+├── embeddings/            # Cached embedding matrices and metadata
+├── clustering/            # Fuzzy C-means model artifacts and diagnostics
+├── cache/                 # (Optional) Serialized cache snapshots
+├── api/                   # FastAPI routing and schemas
+│   ├── __init__.py
+│   └── routes.py
+├── core/                  # Core pipeline logic
+│   ├── __init__.py
+│   ├── config.py          # Global configuration (paths, thresholds, hyperparams)
+│   ├── data_loader.py     # 20 Newsgroups download and cleaning
+│   ├── embeddings.py      # Sentence-transformer model + FAISS index
+│   ├── clustering.py      # Fuzzy C-means clustering and analysis
+│   └── semantic_cache.py  # Custom semantic cache implementation
+├── main.py                # FastAPI entrypoint
+├── requirements.txt
+├── README.md
+└── Dockerfile (optional)
+
