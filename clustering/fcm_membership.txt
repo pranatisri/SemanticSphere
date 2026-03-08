@@ -1,0 +1,4 @@
+Fuzzy C-means clustering report
+Number of clusters: 20
+Fuzziness (m): 2.0
+Silhouette score (cosine): -0.0340
